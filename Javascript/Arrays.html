@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display()
+        {
+            let cosmo=document.getElementsByTagName('li')[2];
+            cosmo.style.color='red';
+            cosmo.style.borderStyle="double";
+
+            var alpha=document.getElementById('process');
+            alpha.style.color='blue';
+            alpha.style.textTransform="uppercase";
+        }
+    </script>
+    <h1>Function Calling</h1>
+    <ol onclick="display()">Favourite Places
+        <li>India</li>
+        <li>USA</li>
+        <li>Japan</li>
+        <li id="process">China</li>
+        <li>Germany</li>
+        <li>France</li>         
+    </ol>
+</body>
+</html>
