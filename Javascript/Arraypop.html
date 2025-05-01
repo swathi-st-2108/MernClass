@@ -16,7 +16,26 @@
         names.push("sanjai");
         names.push(78);
         names.push(0.982);
-        document.writeln(names);    
+        document.writeln(names);  
+        
+        
+        let output=(temp)=>{
+            alert(temp);
+        }
+        names.map(output);
+
+        names.pop();
+        document.writeln(names);
+
+        let one=prompt("Enter a number");
+        names=names.filter((temp,pos)=>{
+            return temp!==names[one];
+        });
+        names.map((temp)=>{
+            document.writeln(temp);
+        });
+
+        
     </script>
 </body>
 </html>
