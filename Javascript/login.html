@@ -26,10 +26,10 @@
         </form>
     </div>
     <div class="container mt-5" id="crud">
-        <h2 class="text-center">STUDENT DATA</h2>
+        <h2 class="text-center">STUDENTS DATA</h2>
         <button id="logout" class="btn btn-warning mb-3">Logout</button>
     </div>
-    <form id="student">
+    <form id="student" class="container ms-7">
         <input type="hidden" id="name" placeholder="Enter Student Name" required>
         <div class="mb-3">
             <label for="studentname" class="form-label">Student Name</label>
@@ -61,9 +61,9 @@
                         <label for="female">Female</label>
                     </div>      
             </div>
-            <button type="submit" class="btn btn-success">Add Student</button>
+            <button type="submit" class="btn btn-success w-100 mb-5">Add Student</button>
             <form>
-                <h2 class="text-center">STUDENT LIST</h2>
+                <h2 class="text-center">STUDENTS LIST</h2>
                 <table class="table table-bordered mt-3" id="studentTable">
                     <thead>
                         <tr>
@@ -77,8 +77,10 @@
                     </thead>
                     <tbody id="studentList">
                         
+                        
                     </tbody>
                 </table>
             </form>
+            <script src="crud.js"></script>
 </body>
 </html>
